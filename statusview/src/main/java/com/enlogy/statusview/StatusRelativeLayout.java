@@ -270,7 +270,8 @@ public class StatusRelativeLayout extends RelativeLayout implements StatusView {
      * @param viewId view id
      * @return view
      */
-    private View getView(int viewId) {
+    @Override
+    public View getView(int viewId) {
         return views.get(viewId);
     }
 

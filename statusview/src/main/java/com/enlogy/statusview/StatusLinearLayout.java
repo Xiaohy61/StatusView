@@ -2,7 +2,7 @@ package com.enlogy.statusview;
 
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.util.AttributeSet;
 import android.util.SparseArray;
 import android.view.LayoutInflater;
@@ -268,7 +268,8 @@ public class StatusLinearLayout extends LinearLayout implements StatusView {
      * @param viewId view id
      * @return view
      */
-    private View getView(int viewId) {
+    @Override
+    public View getView(int viewId) {
         return views.get(viewId);
     }
 

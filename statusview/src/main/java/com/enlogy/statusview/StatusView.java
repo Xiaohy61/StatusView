@@ -14,6 +14,7 @@ public interface StatusView {
     void showExtendContent();
     void setOnItemClickListener(int viewId, View.OnClickListener listener);
     int getViewStatus();
+    View getView(int viewId);
     int STATUS_CONTENT    = 0x00;
     int STATUS_LOADING    = 0x01;
     int STATUS_EMPTY      = 0x02;
